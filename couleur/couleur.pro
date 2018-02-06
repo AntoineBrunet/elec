@@ -1,4 +1,4 @@
-update=Mon 22 Jan 2018 20:28:19 CET
+update=Sun 04 Feb 2018 17:00:28 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/marvin/bench/kicad-library;/home/marvin/bench/kicad-library/library
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,12 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=library/texas
-LibName31=Interface_2018-cache
-LibName32=Interface_2018-rescue
-LibName33=lmd1820x
-LibName34=nlas2066
-LibName35=nxp
-LibName36=rastafalib
-LibName37=alim
-LibName38=Alimentation_2017-cache
+LibName30=/home/marvin/Documents/robot/Elec_2017/Couleur/Couleur-cache
