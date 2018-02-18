@@ -1,4 +1,4 @@
-update=Mon 22 Jan 2018 20:28:19 CET
+update=Sun 18 Feb 2018 22:39:06 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=/home/marvin/bench/kicad-library;/home/marvin/bench/kicad-library/library
@@ -67,3 +65,5 @@ LibName35=nxp
 LibName36=rastafalib
 LibName37=alim
 LibName38=Alimentation_2017-cache
+[general]
+version=1
