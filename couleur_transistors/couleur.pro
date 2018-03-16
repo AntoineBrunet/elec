@@ -1,4 +1,4 @@
-update=Sun 04 Feb 2018 17:00:28 CET
+update=Mon 19 Feb 2018 22:49:38 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=/home/marvin/Documents/robot/ELEC_Robot_2018/Interface
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -59,3 +59,6 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/marvin/Documents/robot/Elec_2017/Couleur/Couleur-cache
+LibName31=rastafalib
+LibName32=nlas2066
+LibName33=Interface_2018-cache
