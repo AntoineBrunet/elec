@@ -1,0 +1,497 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Interface_2018-cache
+LIBS:Interface_2018-rescue
+LIBS:lmd1820x
+LIBS:nlas2066
+LIBS:nxp
+LIBS:rastafalib
+LIBS:alim
+LIBS:Alimentation_2017-cache
+LIBS:protodual-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Dual Alimentation Prototype"
+Date "2017-12-12"
+Rev ""
+Comp "AIGRIS"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +BATT #PWR01
+U 1 1 5A63CB75
+P 1950 2100
+F 0 "#PWR01" H 1950 1950 50  0001 C CNN
+F 1 "+BATT" H 1950 2240 50  0000 C CNN
+F 2 "" H 1950 2100 50  0001 C CNN
+F 3 "" H 1950 2100 50  0001 C CNN
+	1    1950 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 1250 1300 1250
+$Comp
+L GND #PWR02
+U 1 1 5A63CEF5
+P 1300 1350
+F 0 "#PWR02" H 1300 1100 50  0001 C CNN
+F 1 "GND" H 1300 1200 50  0000 C CNN
+F 2 "" H 1300 1350 50  0001 C CNN
+F 3 "" H 1300 1350 50  0001 C CNN
+	1    1300 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1350 1300 1350
+$Comp
+L CONN_02X16 P3
+U 1 1 5A666324
+P 3400 2150
+F 0 "P3" H 3400 3000 50  0000 C CNN
+F 1 "ALIM_PW1" V 3400 2150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x16" H 3400 1050 50  0001 C CNN
+F 3 "" H 3400 1050 50  0000 C CNN
+	1    3400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR03
+U 1 1 5A6664AB
+P 3800 1600
+F 0 "#PWR03" H 3800 1450 50  0001 C CNN
+F 1 "+BATT" H 3800 1740 50  0000 C CNN
+F 2 "" H 3800 1600 50  0001 C CNN
+F 3 "" H 3800 1600 50  0001 C CNN
+	1    3800 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 1600 3800 1600
+Wire Wire Line
+	3750 1400 3750 1800
+Wire Wire Line
+	3750 1400 3650 1400
+Wire Wire Line
+	3650 1500 3750 1500
+Connection ~ 3750 1500
+Connection ~ 3750 1600
+Wire Wire Line
+	3750 1700 3650 1700
+Wire Wire Line
+	3750 1800 3650 1800
+Connection ~ 3750 1700
+$Comp
+L GND #PWR04
+U 1 1 5A666B22
+P 3400 3100
+F 0 "#PWR04" H 3400 2850 50  0001 C CNN
+F 1 "GND" H 3400 2950 50  0000 C CNN
+F 2 "" H 3400 3100 50  0001 C CNN
+F 3 "" H 3400 3100 50  0001 C CNN
+	1    3400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3100 3400 3050
+Wire Wire Line
+	3750 3050 3050 3050
+Wire Wire Line
+	3050 3050 3050 2800
+Wire Wire Line
+	3050 2900 3150 2900
+Wire Wire Line
+	3050 2800 3150 2800
+Connection ~ 3050 2900
+Wire Wire Line
+	3750 1900 3750 3050
+Connection ~ 3400 3050
+Wire Wire Line
+	3750 2800 3650 2800
+Wire Wire Line
+	3750 2700 3650 2700
+Connection ~ 3750 2800
+Wire Wire Line
+	3750 2600 3650 2600
+Connection ~ 3750 2700
+Wire Wire Line
+	3650 2500 3750 2500
+Connection ~ 3750 2600
+Wire Wire Line
+	3650 2400 3750 2400
+Connection ~ 3750 2500
+Wire Wire Line
+	3650 2300 3750 2300
+Connection ~ 3750 2400
+Wire Wire Line
+	3650 2200 3750 2200
+Connection ~ 3750 2300
+Wire Wire Line
+	3650 2100 3750 2100
+Connection ~ 3750 2200
+Wire Wire Line
+	3650 2000 3750 2000
+Connection ~ 3750 2100
+Wire Wire Line
+	3650 1900 3750 1900
+Connection ~ 3750 2000
+Text GLabel 2900 2400 0    60   Input ~ 0
+VOUT1
+Wire Wire Line
+	2900 2400 3150 2400
+Wire Wire Line
+	3050 1400 3050 2700
+Wire Wire Line
+	3050 2700 3150 2700
+Wire Wire Line
+	3150 2600 3050 2600
+Connection ~ 3050 2600
+Wire Wire Line
+	3150 2500 3050 2500
+Connection ~ 3050 2500
+Connection ~ 3050 2400
+Wire Wire Line
+	3150 2300 3050 2300
+Wire Wire Line
+	3150 2200 3050 2200
+Connection ~ 3050 2300
+Wire Wire Line
+	3150 2100 3050 2100
+Connection ~ 3050 2200
+Wire Wire Line
+	3050 2000 3150 2000
+Connection ~ 3050 1700
+Wire Wire Line
+	3150 1900 3050 1900
+Connection ~ 3050 1900
+Wire Wire Line
+	3150 1800 3050 1800
+Connection ~ 3050 1800
+Wire Wire Line
+	3150 1600 3050 1600
+Wire Wire Line
+	3150 1500 3050 1500
+Connection ~ 3050 1600
+Wire Wire Line
+	3150 1400 3050 1400
+Connection ~ 3050 1500
+$Comp
+L Fuse_Small F1
+U 1 1 5A673984
+P 1400 1250
+F 0 "F1" H 1400 1190 50  0000 C CNN
+F 1 "15A" H 1400 1310 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm" H 1400 1250 50  0001 C CNN
+F 3 "" H 1400 1250 50  0001 C CNN
+	1    1400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P4
+U 1 1 5A685C60
+P 900 4650
+F 0 "P4" H 900 4800 50  0000 C CNN
+F 1 "ARU" V 1000 4650 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 900 4650 50  0001 C CNN
+F 3 "" H 900 4650 50  0000 C CNN
+	1    900  4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 1250 2100 1250
+Wire Wire Line
+	1950 1250 1950 1550
+$Comp
+L R_Small R14
+U 1 1 5A6A2747
+P 1550 1500
+F 0 "R14" H 1580 1520 50  0000 L CNN
+F 1 "10k" H 1580 1460 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1550 1500 50  0001 C CNN
+F 3 "" H 1550 1500 50  0001 C CNN
+	1    1550 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1600 1550 1900
+Wire Wire Line
+	1550 1400 1550 1250
+Connection ~ 1550 1250
+Connection ~ 1550 1750
+Text GLabel 2100 1250 2    60   Input ~ 0
+VBATT
+Connection ~ 1950 1250
+$Comp
+L Q_PMOS_GDS Q5
+U 1 1 5A6A7EEB
+P 1850 1750
+F 0 "Q5" H 2050 1800 50  0000 L CNN
+F 1 "Q_PMOS_GDS" H 2050 1700 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-428" H 2050 1850 50  0001 C CNN
+F 3 "" H 1850 1750 50  0001 C CNN
+	1    1850 1750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1650 1750 1550 1750
+Wire Wire Line
+	1950 2100 1950 1950
+$Comp
+L GND #PWR05
+U 1 1 5A7F2961
+P 1450 4700
+F 0 "#PWR05" H 1450 4450 50  0001 C CNN
+F 1 "GND" H 1450 4550 50  0000 C CNN
+F 2 "" H 1450 4700 50  0001 C CNN
+F 3 "" H 1450 4700 50  0001 C CNN
+	1    1450 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4700 1450 4700
+$Comp
+L R_Small R16
+U 1 1 5A7F3154
+P 1350 1900
+F 0 "R16" V 1250 1850 50  0000 L CNN
+F 1 "7.15k" V 1400 2000 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1350 1900 50  0001 C CNN
+F 3 "" H 1350 1900 50  0001 C CNN
+	1    1350 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 1900 1450 1900
+Wire Wire Line
+	1200 1900 1250 1900
+Text GLabel 3900 2900 2    60   Input ~ 0
+VBATT
+Wire Wire Line
+	3900 2900 3650 2900
+$Comp
+L CONN_01X01 P1
+U 1 1 5A897ED3
+P 900 800
+F 0 "P1" H 900 900 50  0000 C CNN
+F 1 "BAT1+" V 1000 800 50  0000 C CNN
+F 2 "kicad-library:WireConnection_2.50mm" H 900 800 50  0001 C CNN
+F 3 "" H 900 800 50  0000 C CNN
+	1    900  800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 5A898229
+P 900 1050
+F 0 "P2" H 900 1150 50  0000 C CNN
+F 1 "BAT1-" V 1000 1050 50  0000 C CNN
+F 2 "kicad-library:WireConnection_2.50mm" H 900 1050 50  0001 C CNN
+F 3 "" H 900 1050 50  0000 C CNN
+	1    900  1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P5
+U 1 1 5A898447
+P 900 1300
+F 0 "P5" H 900 1400 50  0000 C CNN
+F 1 "BAT2+" V 1000 1300 50  0000 C CNN
+F 2 "kicad-library:WireConnection_2.50mm" H 900 1300 50  0001 C CNN
+F 3 "" H 900 1300 50  0000 C CNN
+	1    900  1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P6
+U 1 1 5A898538
+P 900 1550
+F 0 "P6" H 900 1650 50  0000 C CNN
+F 1 "BAT2-" V 1000 1550 50  0000 C CNN
+F 2 "kicad-library:WireConnection_2.50mm" H 900 1550 50  0001 C CNN
+F 3 "" H 900 1550 50  0000 C CNN
+	1    900  1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 1050 1100 1300
+Wire Wire Line
+	1100 1550 1100 1350
+Wire Wire Line
+	1200 1250 1200 800 
+Wire Wire Line
+	1200 800  1100 800 
+$Comp
+L CONN_01X01 P8
+U 1 1 5AC3CFD4
+P 950 2650
+F 0 "P8" H 950 2750 50  0000 C CNN
+F 1 "BAT3+" V 1050 2650 50  0000 C CNN
+F 2 "kicad-library:WireConnection_2.50mm" H 950 2650 50  0001 C CNN
+F 3 "" H 950 2650 50  0000 C CNN
+	1    950  2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P9
+U 1 1 5AC3D03F
+P 950 3300
+F 0 "P9" H 950 3400 50  0000 C CNN
+F 1 "BAT3-" V 1050 3300 50  0000 C CNN
+F 2 "kicad-library:WireConnection_2.50mm" H 950 3300 50  0001 C CNN
+F 3 "" H 950 3300 50  0000 C CNN
+	1    950  3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5AC3D0CB
+P 1250 3500
+F 0 "#PWR06" H 1250 3250 50  0001 C CNN
+F 1 "GND" H 1250 3350 50  0000 C CNN
+F 2 "" H 1250 3500 50  0001 C CNN
+F 3 "" H 1250 3500 50  0001 C CNN
+	1    1250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 3300 1250 3300
+Wire Wire Line
+	1250 3300 1250 3500
+$Comp
+L Fuse_Small F2
+U 1 1 5AC3D159
+P 1300 2650
+F 0 "F2" H 1300 2590 50  0000 C CNN
+F 1 "15A" H 1300 2710 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_SemiClosed_Casing10x25mm" H 1300 2650 50  0001 C CNN
+F 3 "" H 1300 2650 50  0001 C CNN
+	1    1300 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2650 1200 2650
+$Comp
+L Q_PMOS_GDS Q1
+U 1 1 5AC3D23D
+P 1750 3050
+F 0 "Q1" H 1950 3100 50  0000 L CNN
+F 1 "Q_PMOS_GDS" H 1950 3000 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-428" H 1950 3150 50  0001 C CNN
+F 3 "" H 1750 3050 50  0001 C CNN
+	1    1750 3050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1400 2650 1850 2650
+Wire Wire Line
+	1850 2650 1850 2850
+Connection ~ 3050 2100
+Connection ~ 3050 2000
+Wire Wire Line
+	3050 1700 3150 1700
+Text GLabel 2200 3500 2    60   Input ~ 0
+VOUT1
+Wire Wire Line
+	2200 3500 1850 3500
+Wire Wire Line
+	1850 3500 1850 3250
+Text GLabel 1300 4600 2    60   Input ~ 0
+ARU33
+Wire Wire Line
+	1100 4600 1300 4600
+Text GLabel 1200 1900 0    60   Input ~ 0
+ARU33
+Text GLabel 1200 3050 0    60   Input ~ 0
+ARU6
+$Comp
+L R_Small R1
+U 1 1 5AC3D70E
+P 1300 3050
+F 0 "R1" V 1200 3000 50  0000 L CNN
+F 1 "1k" V 1400 3000 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1300 3050 50  0001 C CNN
+F 3 "" H 1300 3050 50  0001 C CNN
+	1    1300 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 5AC3D825
+P 1500 2850
+F 0 "R2" H 1530 2870 50  0000 L CNN
+F 1 "20k" H 1530 2810 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1500 2850 50  0001 C CNN
+F 3 "" H 1500 2850 50  0001 C CNN
+	1    1500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2650 1500 2750
+Connection ~ 1500 2650
+Wire Wire Line
+	1400 3050 1550 3050
+Wire Wire Line
+	1500 2950 1500 3050
+Connection ~ 1500 3050
+$Comp
+L CONN_01X02 P7
+U 1 1 5AC3DCB8
+P 900 4150
+F 0 "P7" H 900 4300 50  0000 C CNN
+F 1 "ARU" V 1000 4150 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 900 4150 50  0001 C CNN
+F 3 "" H 900 4150 50  0000 C CNN
+	1    900  4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5AC3DCBE
+P 1450 4200
+F 0 "#PWR07" H 1450 3950 50  0001 C CNN
+F 1 "GND" H 1450 4050 50  0000 C CNN
+F 2 "" H 1450 4200 50  0001 C CNN
+F 3 "" H 1450 4200 50  0001 C CNN
+	1    1450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4200 1450 4200
+Text GLabel 1300 4100 2    60   Input ~ 0
+ARU6
+Wire Wire Line
+	1100 4100 1300 4100
+$EndSCHEMATC
